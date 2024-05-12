@@ -6,5 +6,6 @@ class Solution:
         a=k%len(nums)
         print("a", a)
         nums[:]=nums[-a:]+nums[:-a]
+        
         return nums
         
