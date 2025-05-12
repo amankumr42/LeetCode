@@ -15,7 +15,6 @@ select
         Delivery 
     ) t where rw = 1
 )
-
 select 
     round((count(case when order_date = customer_pref_delivery_date then 1 
     end) / count(*) * 100 ), 2) as immediate_percentage
